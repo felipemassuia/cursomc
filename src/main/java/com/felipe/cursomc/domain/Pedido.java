@@ -65,7 +65,7 @@ public class Pedido implements Serializable {
 		this.enderecoDeEntrega = enderecoDeEntrega;
 	}
 	
-	public Double getvalorTotal() {
+	public Double getValorTotal() {
 		Double soma = 0.0;
 		for(ItemPedido x : itens) {
 			soma += x.getSubTotal();
@@ -159,7 +159,7 @@ public class Pedido implements Serializable {
 			builder.append(ip.toString());
 		}
 		builder.append("Valor total: ");
-		builder.append(nf.format(getvalorTotal()));
+		builder.append(nf.format(getValorTotal()));
 		
 		return builder.toString();
 	}
