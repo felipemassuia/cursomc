@@ -48,6 +48,17 @@ public class ClienteNewDTO implements Serializable{
 	
 	private Integer cidadeId;
 	
+	@NotEmpty(message="Preenchimento obrigatório")
+	private String senha;
+	
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
 	public ClienteNewDTO() {
 		
 	}
